@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Achievements</title>
+
+</head>
+<body>
+    <!-- hamburger -->
+    <div id="menu" class="menu-container">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="rhombus"></div>
+                </div>
+                <div class="menu-options">
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/characters.html">characters</a></div>
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/forum.html">Our forum</a></div>
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/index.html">home  </a></div>
+                </div>
+            </div>
+            <style>
+                .menu-container {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 5;
+                }
+
+                .menu-toggle {
+                    cursor: pointer;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .rhombus {
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    transform: rotate(45deg);
+                    transition: transform 0.3s ease;
+                    
+                }
+                .menu-options {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    background-color: white;
+                    padding: 10px;
+                }
+
+                .menu-item {
+                    margin: 10px 0;
+                }
+
+                .menu-item a {
+                    text-decoration: none;
+                    color: black;
+                }
+            </style>
+            </style>
+            <script>
+                function toggleMenu() {
+                    const menuOptions = document.querySelector('.menu-options');
+                    const rhombus = document.querySelector('.rhombus');
+                    if (menuOptions.style.display === 'none' || menuOptions.style.display === '') {
+                        menuOptions.style.display = 'block';
+                        rhombus.style.transform = 'rotate(225deg)';
+                    } else {
+                        menuOptions.style.display = 'none';
+                        rhombus.style.transform = 'rotate(45deg)';
+                    }
+                }
+            </script>  
+
+            <!-- hamburger -->
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Game Achievements</h1>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">First Victory</h2>
+                    <p class="achievement-description">Win your first battle against an opponent.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">💯</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Perfect Score</h2>
+                    <p class="achievement-description">Complete a level with a 100% score.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Legendary Status</h2>
+                    <p class="achievement-description">Reach the highest rank in the game.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">⚔️</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Warrior's Path</h2>
+                    <p class="achievement-description">Defeat 1000 enemies in combat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">First Victory</h2>
+                    <p class="achievement-description">Win your first battle against an opponent.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">💯</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Perfect Score</h2>
+                    <p class="achievement-description">Complete a level with a 100% score.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Legendary Status</h2>
+                    <p class="achievement-description">Reach the highest rank in the game.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">⚔️</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Warrior's Path</h2>
+                    <p class="achievement-description">Defeat 1000 enemies in combat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">First Victory</h2>
+                    <p class="achievement-description">Win your first battle against an opponent.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">💯</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Perfect Score</h2>
+                    <p class="achievement-description">Complete a level with a 100% score.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Legendary Status</h2>
+                    <p class="achievement-description">Reach the highest rank in the game.</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">⚔️</div>
+                <div class="achievement-info">
+                    <h2 class="achievement-name">Warrior's Path</h2>
+                    <p class="achievement-description">Defeat 1000 enemies in combat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #bdc9b3;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .achievement-card {
+            background-color: #2c4032;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-10px);
+        }
+        .achievement-icon {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #4e6655;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+        }
+        .achievement-info {
+            padding: 20px;
+        }
+        .achievement-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #cad9a5;
+        }
+        .achievement-description {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</body>
+</html>

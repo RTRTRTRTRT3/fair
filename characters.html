@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Character Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQNrxc7qMslKWj3z0Zm22y0ZH7YkRzJGhWQ&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 800px;
+            color: #ffffff;
+            position: relative;
+        }
+        body:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 900px;
+            background: inherit;
+            filter: blur(8px);
+            z-index: -1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .character-card {
+            background-color: #16213e;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .character-card:hover {
+            transform: translateY(-10px);
+        }
+        .character-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .character-info {
+            padding: 20px;
+        }
+        .character-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+        .character-description {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+                <!-- hamburger -->
+            <div id="menu" class="menu-container">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="rhombus"></div>
+                </div>
+                <div class="menu-options">
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/index.html">home</a></div>
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/forum.html">Our forum</a></div>
+                    <div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/shop.html">Achevement</a></div>
+                </div>
+            </div>
+            <style>
+                .menu-container {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 5;
+                }
+
+                .menu-toggle {
+                    cursor: pointer;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .rhombus {
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    transform: rotate(45deg);
+                    transition: transform 0.3s ease;
+                    
+                }
+                .menu-options {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    background-color: white;
+                    padding: 10px;
+                }
+
+                .menu-item {
+                    margin: 10px 0;
+                }
+
+                .menu-item a {
+                    text-decoration: none;
+                    color: black;
+                }
+            </style>
+            </style>
+            <script>
+                function toggleMenu() {
+                    const menuOptions = document.querySelector('.menu-options');
+                    const rhombus = document.querySelector('.rhombus');
+                    if (menuOptions.style.display === 'none' || menuOptions.style.display === '') {
+                        menuOptions.style.display = 'block';
+                        rhombus.style.transform = 'rotate(225deg)';
+                    } else {
+                        menuOptions.style.display = 'none';
+                        rhombus.style.transform = 'rotate(45deg)';
+                    }
+                }
+            </script>
+            <!-- hamburget -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Character Gallery</h1>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="file:///C:/Users/User/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-09-29%20180341.png" alt="Character 1" class="character-image">
+                <div class="character-info">
+                    <h2 class="character-name">The Deer</h2>
+                    <p class="character-description">A mysterious forest's spirit, one who promised a devotion to forest's silent hymn.</p>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="file:///C:/Users/User/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-09-29%20175334.png" alt="Character 2" class="character-image">
+                <div class="character-info">
+                    <h2 class="character-name">The fox</h2>
+                    <p class="character-description">Always playing on act of innocence and purity, yet that sly grin smells evil.</p>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="file:///C:/Users/User/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-09-29%20180700.png" alt="Character 3" class="character-image">
+                <div class="character-info">
+                    <h2 class="character-name">Crowie</h2>
+                    <p class="character-description">Curiosity, these eyes are full of stupidity, it seems they know more, belonged to death harbringers kin.</p>
+                </div>
+            </div>
+            <div class="character-card">
+                <img src="file:///C:/Users/User/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-09-29%20180734.png" alt="Character 4" class="character-image">
+                <div class="character-info">
+                    <h2 class="character-name">Billie</h2>
+                    <p class="character-description"> Accidental wanderer, a witness of forest's depths.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
