@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tunxkin</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			max-width: 1200px;
+			margin-top: 200px;
+			margin-left: 100px;
+			padding: 0 20px;
+			z-index: 10;
+		}
+		.hero {
+			position: relative;
+			height: 100vh;
+			display: flex;
+			overflow: hidden;
+		}
+		.hero-content {
+			position: relative;
+			z-index: 10;
+			color: white;
+			max-width: 600px;
+			margin-left: 30px;
+
+		}
+		.hero-title {
+			font-size: 4rem;
+			color: white;
+			text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+			font-family: courier new;
+		}
+		.hero-text {
+			font-size: 1.2rem;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+			background-color: rgba(255, 255, 255, 0.2);
+
+		}
+		#background1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.back, .middle, .fore {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.menu-container {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+		}
+		.menu-toggle {
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.rhombus {
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			transform: rotate(45deg);
+			transition: transform 0.3s ease;
+		}
+		.menu-options {
+			display: none;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background-color: white;
+			padding: 10px;
+			border-radius: 10px;
+
+		}
+		.menu-item {
+			margin: 10px 0;
+		}
+		.menu-item a {
+			text-decoration: none;
+			color: black;	
+		}
+		.cta-section {
+			background-color: #f0f0f0;
+			padding: 50px 0;
+		}
+		.cta-content {
+			max-width: 600px;
+		}
+		.cta-title {
+			font-size: 3rem;
+			font-family: 'Courier New', monospace;
+			color: #333;
+		}
+		.cta-text {
+			font-size: 1.1rem;
+			line-height: 1.6;
+			color: #555;
+		}
+		.cta-button {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 15px 30px;
+			background-color: #4CAF50;
+			color: white;
+			text-decoration: none;
+			font-size: 1.1rem;
+			border-radius: 5px;
+		}
+		@media (max-width: 768px) {
+			.hero-title {
+				font-size: 3rem;
+			}
+			.hero-text {
+				font-size: 1rem;
+			}
+			.cta-title {
+				font-size: 2.5rem;
+			}
+			.cta-text {
+				font-size: 1rem;
+			}
+			.cta-button {
+				font-size: 1rem;
+				padding: 10px 20px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<section class="hero">
+		<div class="container" style="display: flex;">
+				<div>
+				<img style="width: 100%; border-radius: 10px; border: 5px solid white; z-index: 30;" src="C:\Users\User\Pictures\Screenshots\Снимок экрана 2024-09-30 214538.png">
+			</div>
+			<div class="hero-content" style="display: block; padding-right: 20px; margin-left: 100px;">
+				<h1 class="hero-title">Tunzkin</h1>
+				<p class="hero-text">Tunzkin - It's an RPG-based game, deep in the depths of an ancient and mysterious forest lie secrets that can change the fate of the entire world. In this exciting 2D RPG, you will become a hero chosen to restore balance to the natural world. Forest dwellers - from friendly spirits to dangerous monsters - are waiting to meet you at every turn.
+
+				Explore dense forest thickets, overcome ancient ruins, solve the mysteries of nature and participate in exciting battles with forest creatures. As you progress through the game, your character will develop, discovering unique abilities and magic associated with the forest. The plot is filled with unexpected twists and moral choices that will affect the ending of the adventure</p>
+			</div>
+
+		
+		</div>
+
+		<div id="menu" class="menu-container">
+			<div class="menu-toggle" onclick="toggleMenu()">
+				<div class="rhombus"></div>
+			</div>
+			<div class="menu-options">
+				<div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/characters.html">characters</a></div>
+				<div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/forum.html">our forum</a></div>
+				<div class="menu-item"><a href="file:///C:/Users/User/Desktop/projectfair/shop.html">achievements</a></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				var menu = document.getElementById("menu");
+				menu.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+				menu.style.opacity = '0';
+				menu.style.transform = 'translateY(-20px)';
+			});
+
+			function toggleMenu() {
+				var menuOptions = document.querySelector('.menu-options');
+				menuOptions.style.display = menuOptions.style.display === 'none' ? 'block' : 'none';
+			}
+		</script>
+
+
+
+
+
+
+		<div id="background1">
+			<img class="back" src="file:///C:/Users/User/Desktop/projectfair/sprites/1.png" alt="Background">
+			<img class="middle" src="file:///C:/Users/User/Desktop/projectfair/sprites/2.png" alt="Middle ground">
+			<img class="fore" src="file:///C:/Users/User/Desktop/projectfair/sprites/3.png" alt="Foreground">
+		</div>
+	m</section>
+
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function() {
+			var scrolled = window.pageYOffset;
+			var back = document.querySelector(".back");
+			var middle = document.querySelector(".middle");
+			var fore = document.querySelector(".fore");
+			var menu = document.getElementById("menu");
+			
+			back.style.transform = 'translateY(' + (scrolled * 0.6) + 'px)';
+			middle.style.transform = 'translateY(' + (scrolled * 0.4) + 'px)';
+			fore.style.transform = 'translateY(' + (scrolled * 0.2) + 'px)';
+
+			if (scrolled > 100) {
+				menu.style.opacity = '1';
+				menu.style.transform = 'translateY(0)';
+			} else {
+				menu.style.opacity = '0';
+				menu.style.transform = 'translateY(-20px)';
+			}
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ЗДЕСЬ ВТОРОЙ СЕКШОН НЕ ПУТАЙСЯ ЗАКАЛЕБАЛА -->
+
+	<section class="backsec2" style="display: block; background: linear-gradient(white, #d6be9a	); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+		<!-- птичко -->
+			<div style="position: relative;">
+				<img class="tree" style="width: 100%; z-index: 2;" src="C:/Users/User/Desktop/projectfair/sprites/4.png">
+				<!-- <img class="tree" style="width: 100%; display: hidden;" src="C:\Users\User\Desktop\projectfair\sprites\42.png)"> -->
+			</div>
+			<!-- <img class="mounts" style="position: absolute; z-index: 1; filter: blur(10px);" src="C:\Users\User\Pictures\Screenshots\Снимок экрана 2024-10-01 102029.png"> -->
+		
+
+	<!-- 	<script type="text/javascript">
+					window.addEventListener('scroll', function() {
+				var scrolled = window.pageYOffset;
+				var tree = document.querySelector(".tree");
+				var mounts = document.querySelector(".mounts");
+				
+				tree.style.transform = 'translateY(' + (scrolled * 0.1) + 'px)';
+				mounts.style.transform = 'translateY(' + (scrolled * 0.1) + 'px)';
+			});
+
+		</script>
+	 -->
+
+
+	 
+		<div id="exploreSection" style="display: flex; justify-content: space-between; padding: 20px; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; position: relative;  background-color: #d6be9a;">
+			
+			<div style="flex: 1; padding-right: 20px; margin-left: 100px; width: 400px;">
+				<h2 style="font-family: courier new; font-size: 40px;">Embark on an Epic Adventure!</h2> 
+				<p style="width: 100%; font-size: 1.2rem;">Dive into a world of mystery and excitement with our new game, "Tunzkin"! 
+					Battle mythical creatures, explore the forest, and uncover hidden secrets as you 
+					journey through breathtaking landscapes. Will you become the one to solve the ancient puzzle?
+				</p>
+				<a href="https://store.steampowered.com/?l=russian" class="cta-button">Get the Game Now!</a>
+			</div>
+			<div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+				<img src="C:/Users/User/Pictures/Screenshots/Снимок экрана 2024-09-30 222346.png">
+				<img src="C:/Users/User/Pictures/Screenshots/Снимок экрана 2024-09-30 222349.png">
+				<img style="grid-column: span 2;" src="C:/Users/User/Pictures/Screenshots/Снимок экрана 2024-09-30 222352.png">
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			window.addEventListener('scroll', function() {
+				var scrolled = window.pageYOffset;
+				var exploreSection = document.getElementById("exploreSection");
+				var tree = document.querySelector('.tree');
+
+				if (scrolled > exploreSection.offsetTop - window.innerHeight / 2) {
+					exploreSection.style.opacity = '1';
+					exploreSection.style.transform = 'translateY(0)';
+				}
+
+				if (tree) {
+					tree.style.transform = 'translateY(' + (scrolled * -0.0) + 'px)';
+				}
+			});
+		</script>
+	</section>
+	<footer class="social-footer">
+		<div class="container">
+			<h3 class="footer-title">Connect With Us</h3>
+			<div class="social-icons">
+				<a href="#" class="social-icon" aria-label="Instagram">
+					<i class="fab fa-instagram"></i>
+					<span class="icon-text">Instagram</span>
+				</a>
+				<a href="#" class="social-icon" aria-label="Facebook">
+					<i class="fab fa-facebook-f"></i>
+					<span class="icon-text">Facebook</span>
+				</a>
+				<a href="#" class="social-icon" aria-label="Twitter">
+					<i class="fab fa-twitter"></i>
+					<span class="icon-text">Twitter</span>
+				</a>
+				<a href="#" class="social-icon" aria-label="YouTube">
+					<i class="fab fa-youtube"></i>
+					<span class="icon-text">YouTube</span>
+				</a>
+			</div>
+			<p class="footer-text">Join our community for exclusive updates, behind-the-scenes content, and special offers!</p>
+			<div class="newsletter-signup">
+				<form>
+					<input type="email" placeholder="Enter your email" aria-label="Email for newsletter" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+			<p class="copyright">© 2024 Tunzkin. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<style>
+		.social-footer {
+			background-color: #2c3e50;
+			color: #ecf0f1;
+			padding: 32px 0;
+			text-align: center;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.footer-title {
+			font-size: 24px;
+			margin-bottom: 16px;
+
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: center;
+			gap: 24px;
+			margin-bottom: 16px;
+		}
+
+		.social-icon {
+			color: #ecf0f1;
+			font-size: 24px;
+			transition: color 0.3s ease;
+		}
+
+		.social-icon:hover {
+			color: #3498db;
+		}
+
+		.footer-text {
+			font-size: 14px;
+			opacity: 0.8;
+		}
+	</style>
+
+	<script>
+		function toggleMenu() {
+			const menuOptions = document.querySelector('.menu-options');
+			const rhombus = document.querySelector('.rhombus');
+			if (menuOptions.style.display === 'none' || menuOptions.style.display === '') {
+				menuOptions.style.display = 'block';
+				rhombus.style.transform = 'rotate(225deg)';
+			} else {
+				menuOptions.style.display = 'none';
+				rhombus.style.transform = 'rotate(45deg)';
+			}
+		}
+
+
+	</script>
+</body>
+</html>
